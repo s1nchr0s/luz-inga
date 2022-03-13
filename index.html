@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Luz Ingá</title>
+	<title>LUZ INGÁ - O SEU ESPAÇO DA DECORAÇÃO</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Edison .S Machado">
 	<meta name="description" content="Materiais para Decoração">
 	<meta name="keywords" content=" luzes, luminárias, lustres, materiais elétricos">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script language="JavaScript"> 
+
+	function validaForm (f){ 
+	var reg = /^\w+([-+,']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/; 
+	if (f.nome.value ==="" || f.nome.value === null ||           f.nome.value.length <3){ 
+
+	alert ("Nome Inválido"); 
+
+	f.nome.focus(); 
+
+	return false; } 
+
+	if (!(reg.test(f.email.value)) || f.email.value===null){ 
+
+	alert ("E-mail inválido"); 
+
+	f.email.focus(); 
+
+	return false; } } 
+
+</script> 
 
 </head>
 <body>
-	<header>
+	
+<!-- Menu de navegacao do site --> 
+
+	<ul class="navbar"> 
+
+	<li><a href="index.html">Home page</a> 
+
+	<li><a href="produtos.html">Produtos</a> 
+
+	<li><a href="email.html">Cadastre seu e-mail</a> 
+
+	</ul> 
+<header>
 	<div class="center">
                <div class="logo"><img src="imagens/inga.jpg", width="900px"/></div>
 
